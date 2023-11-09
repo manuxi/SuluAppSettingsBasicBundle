@@ -1,0 +1,7 @@
+app_settings_basic:
+    title:
+        global: "Seiteneinstellungen"
+        tab: "Grundeinstellungen"
+    properties:
+        language_switch: "Sprachauswahl anzeigen"
+

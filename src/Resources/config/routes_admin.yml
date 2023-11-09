@@ -1,0 +1,5 @@
+sulu_app_settings_basic_api:
+    type: rest
+    prefix: /admin/api
+    resource: sulu_app_settings_basic.controller.admin
+    name_prefix: sulu_app_settings_basic.

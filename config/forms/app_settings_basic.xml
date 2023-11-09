@@ -1,0 +1,27 @@
+<?xml version="1.0" ?>
+<form xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+      xmlns="http://schemas.sulu.io/template/template"
+      xsi:schemaLocation="http://schemas.sulu.io/template/template http://schemas.sulu.io/template/form-1.0.xsd"
+>
+    <key>app_settings_basic</key>
+
+    <properties>
+        <section name="application-settings">
+            <meta>
+                <title>app_settings_basic.title.global</title>
+            </meta>
+            <properties>
+                <property name="languageSwitch" type="checkbox">
+                    <meta>
+                        <title>app_settings_basic.properties.language_switch</title>
+                    </meta>
+                    <params>
+                        <param name="type" value="toggler"/>
+                        <param name="default_value" value="false"/>
+                    </params>
+                </property>
+            </properties>
+        </section>
+
+    </properties>
+</form>
