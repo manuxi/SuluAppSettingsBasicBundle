@@ -1,7 +1,7 @@
 app_settings_basic:
     title:
-        global: "App-Settings"
-        tab: "BAsic Settings"
+        global: "Settings"
+        tab: "Basic Settings"
     properties:
         language_switch: "Show language switcher"
 
