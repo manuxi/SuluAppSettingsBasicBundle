@@ -4,4 +4,5 @@ app_settings_basic:
         tab: "Basic Settings"
     properties:
         language_switch: "Show language switcher"
+        show_search: "Show Search"
 

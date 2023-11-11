@@ -46,11 +46,6 @@ class SuluAppSettingsBasicExtension extends Extension implements PrependExtensio
         $config = $this->processConfiguration($configuration, $configs);
         $loader = new Loader\XmlFileLoader($container, new FileLocator(__DIR__ . "/../../config"));
         $loader->load("services.xml");
-
-        /*
-                $loaderYaml = new Loader\YamlFileLoader($container, new FileLocator(__DIR__ . "/../../config"));
-                $loaderYaml->load("routes_admin.yml");
-        */
     }
 
 }

@@ -60,12 +60,14 @@ class AppSettingsBasicController extends AbstractRestController implements Class
     {
         return [
             'languageSwitch' => $entity->getLanguageSwitch(),
+            'showSearch' => $entity->getShowSearch(),
         ];
     }
 
     protected function mapDataToEntity(array $data, AppSettingsBasic $entity): void
     {
         $entity->setLanguageSwitch($data['languageSwitch']);
+        $entity->setShowSearch($data['showSearch']);
     }
 
     public function getSecurityContext(): string

@@ -30,6 +30,11 @@ class AppSettingsBasic implements AuditableInterface
      */
     private ?bool $languageSwitch = null;
 
+    /**
+     * @ORM\Column(type="boolean", nullable=true)
+     */
+    private ?bool $showSearch = null;
+
     public function getId(): ?int
     {
         return $this->id;
@@ -43,5 +48,15 @@ class AppSettingsBasic implements AuditableInterface
     public function setLanguageSwitch(?bool $languageSwitch): void
     {
         $this->languageSwitch = $languageSwitch;
+    }
+
+    public function getShowSearch(): ?bool
+    {
+        return $this->showSearch;
+    }
+
+    public function setShowSearch(?bool $showSearch): void
+    {
+        $this->showSearch = $showSearch;
     }
 }

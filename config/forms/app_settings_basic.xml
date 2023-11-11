@@ -11,9 +11,18 @@
                 <title>app_settings_basic.title.global</title>
             </meta>
             <properties>
-                <property name="languageSwitch" type="checkbox">
+                <property name="languageSwitch" type="checkbox" colspan="6">
                     <meta>
                         <title>app_settings_basic.properties.language_switch</title>
+                    </meta>
+                    <params>
+                        <param name="type" value="toggler"/>
+                        <param name="default_value" value="false"/>
+                    </params>
+                </property>
+                <property name="showSearch" type="checkbox" colspan="6">
+                    <meta>
+                        <title>app_settings_basic.properties.show_search</title>
                     </meta>
                     <params>
                         <param name="type" value="toggler"/>

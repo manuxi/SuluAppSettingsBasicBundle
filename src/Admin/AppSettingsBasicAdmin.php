@@ -45,7 +45,7 @@ class AppSettingsBasicAdmin extends Admin
     {
         if ($this->securityChecker->hasPermission(AppSettingsBasic::SECURITY_CONTEXT, PermissionTypes::EDIT)) {
             $viewCollection->add(
-            // sulu will only load the existing entity if the path of the form includes an id attribute
+                // sulu will only load the existing entity if the path of the form includes an id attribute
                 $this->viewBuilderFactory->createResourceTabViewBuilder(static::TAB_VIEW, '/app-settings/:id')
                     ->setResourceKey(AppSettingsBasic::RESOURCE_KEY)
                     ->setAttributeDefault('id', '-')
