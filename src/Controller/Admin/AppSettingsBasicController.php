@@ -61,6 +61,9 @@ class AppSettingsBasicController extends AbstractRestController implements Class
         return [
             'languageSwitch' => $entity->getLanguageSwitch(),
             'showSearch' => $entity->getShowSearch(),
+            'toggleSearchTitle' => $entity->getToggleSearchTitle(),
+            'toggleSearchHero' => $entity->getToggleSearchHero(),
+            'toggleSearchBreadcrumbs' => $entity->getToggleSearchBreadcrumbs(),
         ];
     }
 
@@ -68,6 +71,9 @@ class AppSettingsBasicController extends AbstractRestController implements Class
     {
         $entity->setLanguageSwitch($data['languageSwitch']);
         $entity->setShowSearch($data['showSearch']);
+        $entity->setToggleSearchTitle($data['toggleSearchTitle']);
+        $entity->setToggleSearchHero($data['toggleSearchHero']);
+        $entity->setToggleSearchBreadcrumbs($data['toggleSearchBreadcrumbs']);
     }
 
     public function getSecurityContext(): string

@@ -35,6 +35,21 @@ class AppSettingsBasic implements AuditableInterface
      */
     private ?bool $showSearch = null;
 
+    /**
+     * @ORM\Column(type="boolean", nullable=true)
+     */
+    private ?bool $toggleSearchTitle = null;
+
+    /**
+     * @ORM\Column(type="boolean", nullable=true)
+     */
+    private ?bool $toggleSearchHero = null;
+
+    /**
+     * @ORM\Column(type="boolean", nullable=true)
+     */
+    private ?bool $toggleSearchBreadcrumbs = null;
+
     public function getId(): ?int
     {
         return $this->id;
@@ -59,4 +74,35 @@ class AppSettingsBasic implements AuditableInterface
     {
         $this->showSearch = $showSearch;
     }
+
+    public function getToggleSearchTitle(): ?bool
+    {
+        return $this->toggleSearchTitle;
+    }
+
+    public function setToggleSearchTitle(?bool $toggleSearchTitle): void
+    {
+        $this->toggleSearchTitle = $toggleSearchTitle;
+    }
+
+    public function getToggleSearchHero(): ?bool
+    {
+        return $this->toggleSearchHero;
+    }
+
+    public function setToggleSearchHero(?bool $toggleSearchHero): void
+    {
+        $this->toggleSearchHero = $toggleSearchHero;
+    }
+
+    public function getToggleSearchBreadcrumbs(): ?bool
+    {
+        return $this->toggleSearchBreadcrumbs;
+    }
+
+    public function setToggleSearchBreadcrumbs(?bool $toggleSearchBreadcrumbs): void
+    {
+        $this->toggleSearchBreadcrumbs = $toggleSearchBreadcrumbs;
+    }
+
 }

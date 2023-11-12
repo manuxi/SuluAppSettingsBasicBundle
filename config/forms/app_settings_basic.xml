@@ -11,7 +11,7 @@
                 <title>app_settings_basic.title.global</title>
             </meta>
             <properties>
-                <property name="languageSwitch" type="checkbox" colspan="6">
+                <property name="languageSwitch" type="checkbox" colspan="3">
                     <meta>
                         <title>app_settings_basic.properties.language_switch</title>
                     </meta>
@@ -20,13 +20,51 @@
                         <param name="default_value" value="false"/>
                     </params>
                 </property>
-                <property name="showSearch" type="checkbox" colspan="6">
+            </properties>
+        </section>
+
+        <section name="settings-search-results">
+            <meta>
+                <title>app_settings_basic.search.title</title>
+            </meta>
+            <properties>
+                <property name="showSearch" type="checkbox" colspan="3">
                     <meta>
                         <title>app_settings_basic.properties.show_search</title>
                     </meta>
                     <params>
                         <param name="type" value="toggler"/>
                         <param name="default_value" value="false"/>
+                    </params>
+                </property>
+
+                <property name="toggleSearchTitle" type="checkbox" colspan="3" visibleCondition="__parent.showSearch">
+                    <meta>
+                        <title>app_settings_basic.properties.toggle_title</title>
+                    </meta>
+                    <params>
+                        <param name="type" value="toggler"/>
+                        <param name="default_value" value="true"/>
+                    </params>
+                </property>
+
+                <property name="toggleSearchHero" type="checkbox" colspan="3" visibleCondition="__parent.showSearch">
+                    <meta>
+                        <title>app_settings_basic.properties.toggle_hero</title>
+                    </meta>
+                    <params>
+                        <param name="type" value="toggler"/>
+                        <param name="default_value" value="true"/>
+                    </params>
+                </property>
+
+                <property name="toggleSearchBreadcrumbs" type="checkbox" colspan="3" visibleCondition="__parent.showSearch">
+                    <meta>
+                        <title>app_settings_basic.properties.toggle_breadcrumbs</title>
+                    </meta>
+                    <params>
+                        <param name="type" value="toggler"/>
+                        <param name="default_value" value="true"/>
                     </params>
                 </property>
             </properties>

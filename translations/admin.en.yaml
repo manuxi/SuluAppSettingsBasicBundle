@@ -5,4 +5,7 @@ app_settings_basic:
     properties:
         language_switch: "Show language switcher"
         show_search: "Show Search"
+        toggle_title: "Toggle Title"
+        toggle_hero: "Toggle Hero"
+        toggle_breadcrumbs: "Toggle Breadcrumbs"
 

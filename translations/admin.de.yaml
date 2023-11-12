@@ -2,7 +2,12 @@ app_settings_basic:
     title:
         global: "Einstellungen"
         tab: "Grundeinstellungen"
+    search:
+        title: "Einstellungen Suche"
     properties:
         language_switch: "Sprachauswahl anzeigen"
         show_search: "Suche anzeigen"
+        toggle_title: "Titel anzeigen"
+        toggle_hero: "Hero anzeigen"
+        toggle_breadcrumbs: "Breadcrumbs anzeigen"
 
