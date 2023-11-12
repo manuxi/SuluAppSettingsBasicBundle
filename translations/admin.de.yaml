@@ -7,7 +7,10 @@ app_settings_basic:
     properties:
         language_switch: "Sprachauswahl anzeigen"
         show_search: "Suche anzeigen"
-        toggle_title: "Titel anzeigen"
-        toggle_hero: "Hero anzeigen"
+        toggle_header: "Header anzeigen"
+        toggle_hero: "Standard Hero anzeigen"
         toggle_breadcrumbs: "Breadcrumbs anzeigen"
+        search_results: "Max. Anzahl Ergebnisse"
+        toggle_form_under_results: "Suchformular unter Ergebnissen?"
+        toggle_form_show_query: "Suchfeld erneut füllen?"
 

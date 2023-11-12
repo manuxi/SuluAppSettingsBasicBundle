@@ -38,9 +38,9 @@
                     </params>
                 </property>
 
-                <property name="toggleSearchTitle" type="checkbox" colspan="3" visibleCondition="__parent.showSearch">
+                <property name="toggleSearchHeader" type="checkbox" colspan="3" visibleCondition="__parent.showSearch">
                     <meta>
-                        <title>app_settings_basic.properties.toggle_title</title>
+                        <title>app_settings_basic.properties.toggle_header</title>
                     </meta>
                     <params>
                         <param name="type" value="toggler"/>
@@ -61,6 +61,38 @@
                 <property name="toggleSearchBreadcrumbs" type="checkbox" colspan="3" visibleCondition="__parent.showSearch">
                     <meta>
                         <title>app_settings_basic.properties.toggle_breadcrumbs</title>
+                    </meta>
+                    <params>
+                        <param name="type" value="toggler"/>
+                        <param name="default_value" value="true"/>
+                    </params>
+                </property>
+
+                <property name="maxSearchResults" type="number" colspan="3" visibleCondition="__parent.showSearch">
+                    <meta>
+                        <title>app_settings_basic.properties.search_results</title>
+                    </meta>
+                    <params>
+                        <param name="min" value="5"/>
+                        <param name="max" value="60"/>
+                        <param name="step" value="1"/>
+                        <param name="multiple_of" value="1"/>
+                    </params>
+                </property>
+
+                <property name="toggleSearchFormUnderResults" type="checkbox" colspan="3" visibleCondition="__parent.showSearch">
+                    <meta>
+                        <title>app_settings_basic.properties.toggle_form_under_results</title>
+                    </meta>
+                    <params>
+                        <param name="type" value="toggler"/>
+                        <param name="default_value" value="true"/>
+                    </params>
+                </property>
+
+                <property name="toggleSearchFormShowQuery" type="checkbox" colspan="3" visibleCondition="__parent.showSearch">
+                    <meta>
+                        <title>app_settings_basic.properties.toggle_form_show_query</title>
                     </meta>
                     <params>
                         <param name="type" value="toggler"/>

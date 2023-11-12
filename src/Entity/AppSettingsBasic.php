@@ -38,7 +38,7 @@ class AppSettingsBasic implements AuditableInterface
     /**
      * @ORM\Column(type="boolean", nullable=true)
      */
-    private ?bool $toggleSearchTitle = null;
+    private ?bool $toggleSearchHeader = null;
 
     /**
      * @ORM\Column(type="boolean", nullable=true)
@@ -49,6 +49,21 @@ class AppSettingsBasic implements AuditableInterface
      * @ORM\Column(type="boolean", nullable=true)
      */
     private ?bool $toggleSearchBreadcrumbs = null;
+
+    /**
+     * @ORM\Column(type="boolean", nullable=true)
+     */
+    private ?bool $toggleSearchFormUnderResults = null;
+
+    /**
+     * @ORM\Column(type="boolean", nullable=true)
+     */
+    private ?bool $toggleSearchFormShowQuery = null;
+
+    /**
+     * @ORM\Column(type="integer", nullable=true)
+     */
+    private ?int $maxSearchResults = null;
 
     public function getId(): ?int
     {
@@ -75,14 +90,14 @@ class AppSettingsBasic implements AuditableInterface
         $this->showSearch = $showSearch;
     }
 
-    public function getToggleSearchTitle(): ?bool
+    public function getToggleSearchHeader(): ?bool
     {
-        return $this->toggleSearchTitle;
+        return $this->toggleSearchHeader;
     }
 
-    public function setToggleSearchTitle(?bool $toggleSearchTitle): void
+    public function setToggleSearchHeader(?bool $toggleSearchHeader): void
     {
-        $this->toggleSearchTitle = $toggleSearchTitle;
+        $this->toggleSearchHeader = $toggleSearchHeader;
     }
 
     public function getToggleSearchHero(): ?bool
@@ -103,6 +118,36 @@ class AppSettingsBasic implements AuditableInterface
     public function setToggleSearchBreadcrumbs(?bool $toggleSearchBreadcrumbs): void
     {
         $this->toggleSearchBreadcrumbs = $toggleSearchBreadcrumbs;
+    }
+
+    public function getToggleSearchFormUnderResults(): ?bool
+    {
+        return $this->toggleSearchFormUnderResults;
+    }
+
+    public function setToggleSearchFormUnderResults(?bool $toggleSearchFormUnderResults): void
+    {
+        $this->toggleSearchFormUnderResults = $toggleSearchFormUnderResults;
+    }
+
+    public function getToggleSearchFormShowQuery(): ?bool
+    {
+        return $this->toggleSearchFormShowQuery;
+    }
+
+    public function setToggleSearchFormShowQuery(?bool $toggleSearchFormShowQuery): void
+    {
+        $this->toggleSearchFormShowQuery = $toggleSearchFormShowQuery;
+    }
+
+    public function getMaxSearchResults(): ?int
+    {
+        return $this->maxSearchResults;
+    }
+
+    public function setMaxSearchResults(?int $maxSearchResults): void
+    {
+        $this->maxSearchResults = $maxSearchResults;
     }
 
 }

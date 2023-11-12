@@ -61,9 +61,12 @@ class AppSettingsBasicController extends AbstractRestController implements Class
         return [
             'languageSwitch' => $entity->getLanguageSwitch(),
             'showSearch' => $entity->getShowSearch(),
-            'toggleSearchTitle' => $entity->getToggleSearchTitle(),
+            'toggleSearchHeader' => $entity->getToggleSearchHeader(),
             'toggleSearchHero' => $entity->getToggleSearchHero(),
             'toggleSearchBreadcrumbs' => $entity->getToggleSearchBreadcrumbs(),
+            'toggleSearchFormUnderResults' => $entity->getToggleSearchFormUnderResults(),
+            'toggleSearchFormShowQuery' => $entity->getToggleSearchFormShowQuery(),
+            'maxSearchResults' => $entity->getMaxSearchResults(),
         ];
     }
 
@@ -71,9 +74,12 @@ class AppSettingsBasicController extends AbstractRestController implements Class
     {
         $entity->setLanguageSwitch($data['languageSwitch']);
         $entity->setShowSearch($data['showSearch']);
-        $entity->setToggleSearchTitle($data['toggleSearchTitle']);
+        $entity->setToggleSearchHeader($data['toggleSearchHeader']);
         $entity->setToggleSearchHero($data['toggleSearchHero']);
         $entity->setToggleSearchBreadcrumbs($data['toggleSearchBreadcrumbs']);
+        $entity->setToggleSearchFormUnderResults($data['toggleSearchFormUnderResults']);
+        $entity->setToggleSearchFormShowQuery($data['toggleSearchFormShowQuery']);
+        $entity->setMaxSearchResults($data['maxSearchResults']);
     }
 
     public function getSecurityContext(): string
