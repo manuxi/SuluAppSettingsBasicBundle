@@ -10,7 +10,8 @@ app_settings_basic:
         toggle_header: "Header anzeigen"
         toggle_hero: "Standard Hero anzeigen"
         toggle_breadcrumbs: "Breadcrumbs anzeigen"
-        search_results: "Max. Anzahl Ergebnisse"
+        search_results_max: "Max. Anzahl Ergebnisse"
+        search_results_highlight: "Suchbegriff hervorheben?"
         toggle_form_under_results: "Suchformular unter Ergebnissen?"
         toggle_form_show_query: "Suchfeld erneut füllen?"
 

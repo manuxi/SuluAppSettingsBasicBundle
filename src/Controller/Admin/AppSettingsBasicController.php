@@ -67,6 +67,8 @@ class AppSettingsBasicController extends AbstractRestController implements Class
             'toggleSearchFormUnderResults' => $entity->getToggleSearchFormUnderResults(),
             'toggleSearchFormShowQuery' => $entity->getToggleSearchFormShowQuery(),
             'maxSearchResults' => $entity->getMaxSearchResults(),
+            'highlightSearchResults' => $entity->getHighlightSearchResults(),
+
         ];
     }
 
@@ -79,7 +81,7 @@ class AppSettingsBasicController extends AbstractRestController implements Class
         $entity->setToggleSearchBreadcrumbs($data['toggleSearchBreadcrumbs']);
         $entity->setToggleSearchFormUnderResults($data['toggleSearchFormUnderResults']);
         $entity->setToggleSearchFormShowQuery($data['toggleSearchFormShowQuery']);
-        $entity->setMaxSearchResults($data['maxSearchResults']);
+        $entity->setHighlightSearchResults($data['highlightSearchResults']);
     }
 
     public function getSecurityContext(): string

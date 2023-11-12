@@ -70,7 +70,7 @@
 
                 <property name="maxSearchResults" type="number" colspan="3" visibleCondition="__parent.showSearch">
                     <meta>
-                        <title>app_settings_basic.properties.search_results</title>
+                        <title>app_settings_basic.properties.search_results_max</title>
                     </meta>
                     <params>
                         <param name="min" value="5"/>
@@ -90,13 +90,23 @@
                     </params>
                 </property>
 
+                <property name="highlightSearchResults" type="checkbox" colspan="3" visibleCondition="__parent.showSearch">
+                    <meta>
+                        <title>app_settings_basic.properties.search_results_highlight</title>
+                    </meta>
+                    <params>
+                        <param name="type" value="toggler"/>
+                        <param name="default_value" value="false"/>
+                    </params>
+                </property>
+
                 <property name="toggleSearchFormShowQuery" type="checkbox" colspan="3" visibleCondition="__parent.showSearch">
                     <meta>
                         <title>app_settings_basic.properties.toggle_form_show_query</title>
                     </meta>
                     <params>
                         <param name="type" value="toggler"/>
-                        <param name="default_value" value="true"/>
+                        <param name="default_value" value="false"/>
                     </params>
                 </property>
             </properties>

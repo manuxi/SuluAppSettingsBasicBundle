@@ -61,6 +61,11 @@ class AppSettingsBasic implements AuditableInterface
     private ?bool $toggleSearchFormShowQuery = null;
 
     /**
+     * @ORM\Column(type="boolean", nullable=true)
+     */
+    private ?bool $highlightSearchResults = null;
+
+    /**
      * @ORM\Column(type="integer", nullable=true)
      */
     private ?int $maxSearchResults = null;
@@ -148,6 +153,16 @@ class AppSettingsBasic implements AuditableInterface
     public function setMaxSearchResults(?int $maxSearchResults): void
     {
         $this->maxSearchResults = $maxSearchResults;
+    }
+
+    public function getHighlightSearchResults(): ?bool
+    {
+        return $this->highlightSearchResults;
+    }
+
+    public function setHighlightSearchResults(?bool $highlightSearchResults): void
+    {
+        $this->highlightSearchResults = $highlightSearchResults;
     }
 
 }
