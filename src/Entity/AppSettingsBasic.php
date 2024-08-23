@@ -2,14 +2,13 @@
 
 namespace Manuxi\SuluAppSettingsBasicBundle\Entity;
 
+use Doctrine\DBAL\Types\Types;
 use Doctrine\ORM\Mapping as ORM;
 use Sulu\Component\Persistence\Model\AuditableInterface;
 use Sulu\Component\Persistence\Model\AuditableTrait;
 
-/**
- * @ORM\Entity()
- * @ORM\Table(name="app_settings_basic")
- */
+#[ORM\Entity]
+#[ORM\Table(name: 'app_settings_basic')]
 class AppSettingsBasic implements AuditableInterface
 {
     use AuditableTrait;
@@ -18,56 +17,36 @@ class AppSettingsBasic implements AuditableInterface
     public const FORM_KEY = 'app_settings_basic';
     public const SECURITY_CONTEXT = 'sulu.settings.app_settings_basic';
 
-    /**
-     * @ORM\Id()
-     * @ORM\GeneratedValue()
-     * @ORM\Column(type="integer")
-     */
+    #[ORM\Id]
+    #[ORM\GeneratedValue]
+    #[ORM\Column(type: Types::INTEGER)]
     private ?int $id = null;
 
-    /**
-     * @ORM\Column(type="boolean", nullable=true)
-     */
+    #[ORM\Column(type: Types::BOOLEAN, nullable: true)]
     private ?bool $languageSwitch = null;
 
-    /**
-     * @ORM\Column(type="boolean", nullable=true)
-     */
+    #[ORM\Column(type: Types::BOOLEAN, nullable: true)]
     private ?bool $showSearch = null;
 
-    /**
-     * @ORM\Column(type="boolean", nullable=true)
-     */
+    #[ORM\Column(type: Types::BOOLEAN, nullable: true)]
     private ?bool $toggleSearchHeader = null;
 
-    /**
-     * @ORM\Column(type="boolean", nullable=true)
-     */
+    #[ORM\Column(type: Types::BOOLEAN, nullable: true)]
     private ?bool $toggleSearchHero = null;
 
-    /**
-     * @ORM\Column(type="boolean", nullable=true)
-     */
+    #[ORM\Column(type: Types::BOOLEAN, nullable: true)]
     private ?bool $toggleSearchBreadcrumbs = null;
 
-    /**
-     * @ORM\Column(type="boolean", nullable=true)
-     */
+    #[ORM\Column(type: Types::BOOLEAN, nullable: true)]
     private ?bool $toggleSearchFormUnderResults = null;
 
-    /**
-     * @ORM\Column(type="boolean", nullable=true)
-     */
+    #[ORM\Column(type: Types::BOOLEAN, nullable: true)]
     private ?bool $toggleSearchFormShowQuery = null;
 
-    /**
-     * @ORM\Column(type="boolean", nullable=true)
-     */
+    #[ORM\Column(type: Types::BOOLEAN, nullable: true)]
     private ?bool $highlightSearchResults = null;
 
-    /**
-     * @ORM\Column(type="integer", nullable=true)
-     */
+    #[ORM\Column(type: Types::INTEGER, nullable: true)]
     private ?int $maxSearchResults = null;
 
     public function getId(): ?int

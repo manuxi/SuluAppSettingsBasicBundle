@@ -11,11 +11,9 @@ use HandcraftedInTheAlps\RestRoutingBundle\Routing\ClassResourceInterface;
 use Manuxi\SuluAppSettingsBasicBundle\Entity\AppSettingsBasic;
 use Sulu\Component\Rest\AbstractRestController;
 use Sulu\Component\Security\SecuredControllerInterface;
-
 use Symfony\Component\HttpFoundation\Request;
 use Symfony\Component\HttpFoundation\Response;
 use Symfony\Component\Security\Core\Authentication\Token\Storage\TokenStorageInterface;
-
 
 /**
  * @RouteResource("app-settings-basic")
@@ -74,6 +72,7 @@ class AppSettingsBasicController extends AbstractRestController implements Class
 
     protected function mapDataToEntity(array $data, AppSettingsBasic $entity): void
     {
+        $entity->setMaxSearchResults($data['maxSearchResults']);
         $entity->setLanguageSwitch($data['languageSwitch']);
         $entity->setShowSearch($data['showSearch']);
         $entity->setToggleSearchHeader($data['toggleSearchHeader']);
