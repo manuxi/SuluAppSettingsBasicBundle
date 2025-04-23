@@ -1,6 +1,4 @@
 # SuluAppSettingsBasicBundle!
-![php workflow](https://github.com/manuxi/SuluAppSettingsBasicBundle/actions/workflows/php.yml/badge.svg)
-![symfony workflow](https://github.com/manuxi/SuluAppSettingsBasicBundle/actions/workflows/symfony.yml/badge.svg)
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
 <a href="https://github.com/manuxi/SuluAppSettingsBasicBundle/tags" target="_blank">
 <img src="https://img.shields.io/github/v/tag/manuxi/SuluAppSettingsBasicBundle" alt="GitHub license">
